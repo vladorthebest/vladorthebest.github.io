@@ -1,1 +1,216 @@
-Hello World
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перший ВАЗ в Сумах - Історичний автомобіль</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #003366, #0066cc);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .car-image {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .info-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #003366;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .spec-item {
+            background: #f0f8ff;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .spec-title {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .specs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Перший ВАЗ в Сумах</h1>
+            <p class="subtitle">Історичний автомобіль, який з'явився у нашому місті</p>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <div class="info-section">
+            <h2>Історія появи</h2>
+            <p>Перший автомобіль марки ВАЗ (Жигулі) з'явився у Сумах у [рік]. Це була справжня подія для міста, оскільки радянські автомобілі були рідкістю в ті часи.</p>
+            <p>Автомобіль був придбаний [ім'я власника], який став першим приватним власником ВАЗ у нашому місті. Ця подія відзначила початок нової ери приватного автотранспорту в Сумах.</p>
+            
+            <div class="specs">
+                <div class="spec-item">
+                    <div class="spec-title">Модель</div>
+                    <div>ВАЗ-2101 "Жигулі"</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-title">Рік випуску</div>
+                    <div>[рік]</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-title">Двигун</div>
+                    <div>1.2L, 64 к.с.</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-title">Коробка передач</div>
+                    <div>4-ступінчаста МКПП</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-title">Макс. швидкість</div>
+                    <div>140 км/год</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-title">Витрата пального</div>
+                    <div>8.5 л/100 км</div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <img src="https://example.com/vaz-sumy.jpg" alt="Перший ВАЗ в Сумах" class="car-image">
+            <div class="info-section" style="margin-top: 2rem;">
+                <h2>Цікаві факти</h2>
+                <p>• Автомобіль зберігся у відмінному стані до наших днів</p>
+                <p>• Перший власник проїхав на ньому понад 200,000 км</p>
+                <p>• Авто брало участь у міських виставках ретро-автомобілів</p>
+                <p>• Двигун оригінальний, ніколи не замінювався</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="info-section" style="grid-column: 1 / -1;">
+            <h2>Фотогалерея</h2>
+            <div class="gallery">
+                <img src="https://example.com/vaz1.jpg" alt="ВАЗ в Сумах - вид спереду">
+                <img src="https://example.com/vaz2.jpg" alt="ВАЗ в Сумах - салон">
+                <img src="https://example.com/vaz3.jpg" alt="ВАЗ в Сумах - двигун">
+                <img src="https://example.com/vaz4.jpg" alt="ВАЗ в Сумах - вид збоку">
+                <img src="https://example.com/vaz5.jpg" alt="ВАЗ в Сумах - історичне фото">
+                <img src="https://example.com/vaz6.jpg" alt="ВАЗ в Сумах - сучасний стан">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p>© 2023 Перший ВАЗ в Сумах. Всі права захищені.</p>
+            <p style="margin-top: 1rem;">Контакти: [телефон] | [email] | [адреса]</p>
+            <p style="margin-top: 1rem;">Сайт створено для збереження історичної пам'яті міста Суми</p>
+        </div>
+    </footer>
+</body>
+</html>
