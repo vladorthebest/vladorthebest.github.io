@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,9 @@ body {
   width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
-background-color: #425cc8;
+  background-image: url('1234.png'); /* Set the background image */
+  background-repeat: repeat; /* Make the image repeat */
+  background-size: 50%; /* Reduce the background image size */
 }
 
 .header {
@@ -19,14 +20,14 @@ background-color: #425cc8;
   justify-content: center;
   align-items: center;
   padding: 20px 0 10px;
-  background-color: #425cc8;
+
 }
 
 .car-image {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   height: auto;
-    margin-bottom: -50px; /* ВАЖНО: часть изображения перекроет блок снизу */
+    margin-bottom: -20px; /* ВАЖНО: часть изображения перекроет блок снизу */
   z-index: 2;
   position: relative;
 }
@@ -35,25 +36,25 @@ background-color: #425cc8;
   background-color: #464742;
   color: #222;
   width: 300px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
     padding: 10px 10px 10px 10px;
+    padding-top: 20px;
 }
 
 .second-content {
   background-color: #ffffff;
   color: #222;
-  width: 100%px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .second-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0 10px;
 }
 
 .logo-image {
@@ -66,7 +67,7 @@ background-color: #425cc8;
 .section {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   padding: 16px;
   background: #ffffff;
   border-radius: 8px;
@@ -90,7 +91,6 @@ margin: auto;
 .center-block {
 text-align: center;
 padding: 20px;
-margin-bottom: 40px;
 border-radius: 8px;
 }
 
